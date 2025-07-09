@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cybersage Weather - Your Weather, Your Community</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav-left">
+          <img src="Images/Weather5.png" alt="Cybersage Weather logo" />
+          <h2>Cybersage Weather</h2>
+        </div>
+        <div class="nav-right">
+          <ul>
+            <li><a href="#" aria-current="page">Today</a></li>
+            <li><a href="#">Tomorrow</a></li>
+            <li><a href="#">Monthly Forecast</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>Your Weather, Your Community</h1>
+          <p>Stay updated with the latest weather conditions in your area.</p>
+          <button type="button" class="cta-button">Check Weather</button>
+        </div>
+        <div class="search-container">
+          <label for="location-search" class="sr-only"
+            >Search for a location</label
+          >
+          <img src="Images/icon _search_.png" alt="Search icon" />
+          <input
+            type="text"
+            id="location-search"
+            placeholder="Search for a location..."
+            aria-label="Search for a location"
+          />
+        </div>
+      </section>
+
+      <section class="weather-info">
+        <div class="left-arrow">
+          <button type="button" aria-label="Previous location">
+            <img src="Images/leftarrow.png" alt="Previous" />
+          </button>
+        </div>
+        <div class="weather-cards-wrapper" id="weatherWrapper">
+          <div class="carousel-item">
+            <div class="weathercards active" data-city="Busan">
+              <div class="main-weather-card">
+                <div class="main-weather-card-heading">
+                  <h2>Busan</h2>
+                  <img src="Images/icon _location_.png" alt="Location pin" />
+                </div>
+                <div class="main-weather-content">
+                  <div class="date-condition">
+                    <p class="date">Aug 23, Tue</p>
+                    <p>Condition: Cloudy</p>
+                  </div>
+                  <img
+                    src="Images/icon _temperature_.png"
+                    alt="Temperature thermometer"
+                  />
+                  <div class="temperature-content">
+                    <h3>20°C</h3>
+                    <img src="Images/Weather2.png" alt="Cloudy weather icon" />
+                  </div>
+                </div>
+                <div class="main-weather-details">
+                  <div class="weather-metric">
+                    <div class="weather-metric-details">
+                      <span class="metric-label">Humidity</span>
+                      <span class="metric-value">85%</span>
+                    </div>
+                    <div class="weather-metric-details">
+                      <span class="metric-label">Visibility</span>
+                      <span class="metric-value">8km</span>
+                    </div>
+                    <div class="weather-metric-details">
+                      <span class="metric-label">Air Pressure</span>
+                      <span class="metric-value">1005hPa</span>
+                    </div>
+                    <div class="weather-metric-details">
+                      <span class="metric-label">Wind</span>
+                      <span class="metric-value">12mph</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="weathercards" data-city="California">
+              <div class="main-weather-card">
+                <div class="main-weather-card-heading">
+                  <h2>California</h2>
+                  <img src="Images/icon _location_.png" alt="Location pin" />
+                </div>
+                <div class="main-weather-content">
+                  <div class="date-condition">
+                    <p class="date">Aug 23, Tue</p>
+                    <p>Condition: Sunny/Clear</p>
+                  </div>
+                  <img
+                    src="Images/icon _temperature_.png"
+                    alt="Temperature thermometer"
+                  />
+                  <div class="temperature-content">
+                    <h3>24°C</h3>
+                    <img src="Images/Weather2.png" alt="Cloudy weather icon" />
+                  </div>
+                </div>
+                <div class="main-weather-details">
+                  <div class="weather-metric">
+                    <div class="weather-metric-details">
+                      <span class="metric-label">Humidity</span>
+                      <span class="metric-value">72%</span>
+                    </div>
+                    <div class="weather-metric-details">
+                      <span class="metric-label">Visibility</span>
+                      <span class="metric-value">15km</span>
+                    </div>
+                    <div class="weather-metric-details">
+                      <span class="metric-label">Air Pressure</span>
+                      <span class="metric-value">1012hPa</span>
+                    </div>
+                    <div class="weather-metric-details">
+                      <span class="metric-label">Wind</span>
+                      <span class="metric-value">8mph</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="weathercards" data-city="Japan">
+              <div class="main-weather-card">
+                <div class="main-weather-card-heading">
+                  <h2>Tokyo</h2>
+                  <img src="Images/icon _location_.png" alt="Location pin" />
+                </div>
+                <div class="main-weather-content">
+                  <div class="date-condition">
+                    <p class="date">Aug 23, Tue</p>
+                    <p>Condition:Rainy</p>
+                  </div>
+                  <img
+                    src="Images/icon _temperature_.png"
+                    alt="Temperature thermometer"
+                  />
+                  <div class="temperature-content">
+                    <h3>18°C</h3>
+                    <img src="Images/Weather2.png" alt="Cloudy weather icon" />
+                  </div>
+                </div>
+                <div class="main-weather-details">
+                  <div class="weather-metric">
+                    <div class="weather-metric-details">
+                      <span class="metric-label">Humidity</span>
+                      <span class="metric-value">95%</span>
+                    </div>
+                    <div class="weather-metric-details">
+                      <span class="metric-label">Visibility</span>
+                      <span class="metric-value">3km</span>
+                    </div>
+                    <div class="weather-metric-details">
+                      <span class="metric-label">Air Pressure</span>
+                      <span class="metric-value">998hPa</span>
+                    </div>
+                    <div class="weather-metric-details">
+                      <span class="metric-label">Wind</span>
+                      <span class="metric-value">15mph</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="weathercards" data-city="Toronto">
+              <div class="main-weather-card">
+                <div class="main-weather-card-heading">
+                  <h2>Toronto</h2>
+                  <img src="Images/icon _location_.png" alt="Location pin" />
+                </div>
+                <div class="main-weather-content">
+                  <div class="date-condition">
+                    <p class="date">Aug 23, Tue</p>
+                    <p>Condition: Cloudy</p>
+                  </div>
+                  <img
+                    src="Images/icon _temperature_.png"
+                    alt="Temperature thermometer"
+                  />
+                  <div class="temperature-content">
+                    <h3>-5°C</h3>
+                    <img src="Images/Weather2.png" alt="Cloudy weather icon" />
+                  </div>
+                </div>
+                <div class="main-weather-details">
+                  <div class="weather-metric">
+                    <div class="weather-metric-details">
+                      <span class="metric-label">Humidity</span>
+                      <span class="metric-value">99%</span>
+                    </div>
+                    <div class="weather-metric-details">
+                      <span class="metric-label">Visibility</span>
+                      <span class="metric-value">8km</span>
+                    </div>
+                    <div class="weather-metric-details">
+                      <span class="metric-label">Air Pressure</span>
+                      <span class="metric-value">1005hPa</span>
+                    </div>
+                    <div class="weather-metric-details">
+                      <span class="metric-label">Wind</span>
+                      <span class="metric-value">2mph</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="weathercards" data-city="Dubai">
+              <div class="main-weather-card">
+                <div class="main-weather-card-heading">
+                  <h2>Dubai</h2>
+                  <img src="Images/icon _location_.png" alt="Location pin" />
+                </div>
+                <div class="main-weather-content">
+                  <div class="date-condition">
+                    <p class="date">Aug 23, Tue</p>
+                    <p>Condition: Sunny/Clear</p>
+                  </div>
+                  <img
+                    src="Images/icon _temperature_.png"
+                    alt="Temperature thermometer"
+                  />
+                  <div class="temperature-content">
+                    <h3>28°C</h3>
+                    <img src="Images/Weather2.png" alt="Cloudy weather icon" />
+                  </div>
+                </div>
+                <div class="main-weather-details">
+                  <div class="weather-metric">
+                    <div class="weather-metric-details">
+                      <span class="metric-label">Humidity</span>
+                      <span class="metric-value">99%</span>
+                    </div>
+                    <div class="weather-metric-details">
+                      <span class="metric-label">Visibility</span>
+                      <span class="metric-value">8km</span>
+                    </div>
+                    <div class="weather-metric-details">
+                      <span class="metric-label">Air Pressure</span>
+                      <span class="metric-value">1005hPa</span>
+                    </div>
+                    <div class="weather-metric-details">
+                      <span class="metric-label">Wind</span>
+                      <span class="metric-value">2mph</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-arrow">
+          <button type="button" aria-label="Next location">
+            <img src="Images/rightarrow.png" alt="Next" />
+          </button>
+        </div>
+      </section>
+
+      <section class="hourly-forecast">
+        <h2 class="sr-only">Hourly Weather Forecast</h2>
+        <div class="small-weather-card-components">
+          <p class="time">7:00 PM</p>
+          <div class="small-weather-card-content">
+            <img src="Images/Weather3.png" alt="Partly cloudy" />
+            <p class="temperature">17°C</p>
+          </div>
+        </div>
+        <div class="small-weather-card-components">
+          <p class="time">9:00 PM</p>
+          <div class="small-weather-card-content">
+            <img src="Images/Weather1.png" alt="Partly cloudy" />
+            <p class="temperature">15°</p>
+          </div>
+        </div>
+        <div class="small-weather-card-components">
+          <p class="time">11:00 PM</p>
+          <div class="small-weather-card-content">
+            <img src="Images/Weather5.png" alt="Partly cloudy" />
+            <p class="temperature">12°</p>
+          </div>
+        </div>
+        <div class="small-weather-card-components">
+          <p class="time">5:00 AM</p>
+          <div class="small-weather-card-content">
+            <img src="Images/Weather2.png" alt="Partly cloudy" />
+            <p class="temperature">20°</p>
+          </div>
+        </div>
+        <div class="small-weather-card-components">
+          <p class="time">8:00 AM</p>
+          <div class="small-weather-card-content">
+            <img src="Images/Weather3.png" alt="Clear sky" />
+            <p class="temperature">20°</p>
+          </div>
+        </div>
+        <div class="small-weather-card-components">
+          <p class="time">11:00 AM</p>
+          <div class="small-weather-card-content">
+            <img src="Images/Weather4.png" alt="Clear sky" />
+            <p class="temperature">25°</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="top-cities">
+        <h2>Popular Cities Weather</h2>
+        <div class="city-content-container">
+          <div class="city-content">
+            <img src="Images/Location1.png" alt="Chicago city skyline" />
+            <p>Chicago</p>
+          </div>
+          <div class="city-content">
+            <img src="Images/Location2.png" alt="Washington DC city skyline" />
+            <p>Washington DC</p>
+          </div>
+          <div class="city-content">
+            <img src="Images/Location3.png" alt="New York city skyline" />
+            <p>New York</p>
+          </div>
+          <div class="city-content">
+            <img src="Images/Location4.png" alt="San Francisco city skyline" />
+            <p>San Francisco</p>
+          </div>
+          <div class="city-content">
+            <img src="Images/Location5.png" alt="Houston city skyline" />
+            <p>Houston</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="weather-radar">
+        <img
+          src="Images/Globe.png"
+          alt="Interactive weather globe showing global patterns"
+        />
+        <div class="globe-content">
+          <h2>Weather Radar Map</h2>
+          <p>Temperature, Rain and Wind Patterns</p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="newsletter-signup">
+          <h2>Get daily forecasts straight to your inbox</h2>
+          <div class="footer-input">
+            <label for="email-input" class="sr-only"
+              >Enter your email address</label
+            >
+            <input
+              type="email"
+              id="email-input"
+              placeholder="Enter your email"
+              required
+              aria-describedby="email-help"
+            />
+            <button type="submit">Subscribe</button>
+          </div>
+          <p id="email-help" class="sr-only">
+            Subscribe to receive daily weather forecasts in your email
+          </p>
+        </div>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
